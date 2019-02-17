@@ -1,17 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Litua</title>
-  <base href="/">
+  <head>
+    <meta charset="utf-8" />
+    <title>Litua</title>
+    <base href="/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&amp;subset=cyrillic" rel="stylesheet">
-  <link href="/assets/css/util.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="styles.cf0792058fc3b83d0f32.css"></head>
-<body>
-  <m22-root></m22-root>
-<script type="text/javascript" src="runtime.a5dd35324ddfd942bef1.js"></script><script type="text/javascript" src="polyfills.46532d96d3286697c138.js"></script><script type="text/javascript" src="main.4cf9a069ab168a36d994.js"></script></body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&amp;subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link href="/assets/css/util.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafrex/spa-github-pages
+      // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+      // ----------------------------------------------------------------------
+      // This script checks to see if a redirect is present in the query string
+      // and converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function(l) {
+        if (l.search) {
+          var q = {};
+          l.search
+            .slice(1)
+            .split("&")
+            .forEach(function(v) {
+              var a = v.split("=");
+              q[a[0]] = a
+                .slice(1)
+                .join("=")
+                .replace(/~and~/g, "&");
+            });
+          if (q.p !== undefined) {
+            window.history.replaceState(
+              null,
+              null,
+              l.pathname.slice(0, -1) +
+                (q.p || "") +
+                (q.q ? "?" + q.q : "") +
+                l.hash
+            );
+          }
+        }
+      })(window.location);
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
+  <link rel="stylesheet" href="styles.cf0792058fc3b83d0f32.css"></head>
+  <body>
+    <m22-root></m22-root>
+  <script type="text/javascript" src="runtime.a5dd35324ddfd942bef1.js"></script><script type="text/javascript" src="polyfills.46532d96d3286697c138.js"></script><script type="text/javascript" src="main.35418f64afbfa690ba71.js"></script></body>
 </html>
